@@ -9,10 +9,10 @@ $ flutter build web
 ```
 - Build the docker image.
 ```sh
-$ docker build -t IMAGE_NAME .
+$ docker build -t flutter_web .
 ```
 
 # Deploy
 ```sh
-$ docker run -d --restart unless-stopped --name CONTAINER_NAME -p 3000:80 IMAGE_NAME
+$ docker run -d --restart unless-stopped --name web_demo -p 3000:80 flutter_web
 ```
